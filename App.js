@@ -3,8 +3,7 @@ import { View } from 'react-native';
 import { Provider } from 'react-redux';
 
 import Store from './src/store';
-import { Header, CryptoContainer } from './src/components';
-
+import { Header, CryptoContainer, Footer } from './src/components';
 
 export default class App extends Component {
   render() {
@@ -13,6 +12,7 @@ export default class App extends Component {
         <View>
           <Header />
           <CryptoContainer />
+          <Footer/>
         </View>
       </Provider>
     );
